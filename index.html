@@ -1,35 +1,56 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Life OS — Legal</title>
+<title>Legal / Документи — Life OS</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.lang{display:flex;gap:8px;margin:0 0 8px}
+.lang a{padding:6px 14px;border:1px solid var(--border);border-radius:999px;text-decoration:none;font-size:15px}
+.lang a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+ul{color:var(--text-secondary);font-size:17px;margin:0 0 14px;padding-left:22px}
+li{margin:0 0 6px}
+section[hidden]{display:none}
+</style>
 </head>
 <body>
 <div class="wrap">
+<nav class="lang"><a href="#uk" data-lang="uk">Українська</a><a href="#en" data-lang="en">English</a></nav>
+<section data-lang="uk" lang="uk">
+<header>
+  <p class="eyebrow">Life OS</p>
+  <h1>Твоя особиста операційна система для зростання</h1>
+  <p class="updated">Юридичні документи і підтримка</p>
+</header>
+<h2>Документи</h2>
+<p><a href="terms.html#uk">Умови використання (публічна оферта)</a><br><a href="privacy.html#uk">Політика конфіденційності</a><br><a href="support.html#uk">Підтримка</a></p>
+<footer><p>Life OS — інструмент саморозвитку і продуктивності. Він не замінює медичної, психологічної, юридичної чи фінансової допомоги.</p></footer>
+</section>
 
+<section data-lang="en" lang="en">
 <header>
   <p class="eyebrow">Life OS</p>
   <h1>Your personal operating system for growth</h1>
   <p class="updated">Legal documents and support</p>
 </header>
-
 <h2>Documents</h2>
-<p>
-  <a href="privacy.html">Privacy Policy</a><br>
-  <a href="terms.html">Terms of Service</a>
-</p>
-
-<h2>Support</h2>
-<p>Questions, bug reports, data requests or anything else:
-<a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</p>
-
-<footer>
-  <p>Life OS is a self-development and productivity tool. It does not replace medical,
-  psychological, legal or financial advice.</p>
-</footer>
-
+<p><a href="terms.html#en">Terms of Use (public offer)</a><br><a href="privacy.html#en">Privacy Policy</a><br><a href="support.html#en">Support</a></p>
+<footer><p>Life OS is a self-development and productivity tool. It does not replace medical, psychological, legal or financial advice.</p></footer>
+</section>
 </div>
+<script>
+(function(){
+  function show(l){
+    document.querySelectorAll('section[data-lang]').forEach(function(s){s.hidden=s.dataset.lang!==l});
+    document.querySelectorAll('.lang a').forEach(function(a){a.classList.toggle('on',a.dataset.lang===l)});
+    document.documentElement.lang=l;
+  }
+  var h=location.hash.slice(1);
+  var nav=(navigator.language||'').toLowerCase();
+  show(h==='uk'||h==='en'?h:(/^(uk|ru)/.test(nav)?'uk':'en'));
+  window.addEventListener('hashchange',function(){var x=location.hash.slice(1);if(x==='uk'||x==='en')show(x)});
+})();
+</script>
 </body>
 </html>

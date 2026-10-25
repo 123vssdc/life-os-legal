@@ -1,113 +1,194 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Life OS</title>
+<title>Privacy Policy / Політика конфіденційності — Life OS</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.lang{display:flex;gap:8px;margin:0 0 8px}
+.lang a{padding:6px 14px;border:1px solid var(--border);border-radius:999px;text-decoration:none;font-size:15px}
+.lang a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+ul{color:var(--text-secondary);font-size:17px;margin:0 0 14px;padding-left:22px}
+li{margin:0 0 6px}
+section[hidden]{display:none}
+</style>
 </head>
 <body>
 <div class="wrap">
+<nav class="lang"><a href="#uk" data-lang="uk">Українська</a><a href="#en" data-lang="en">English</a></nav>
+<section data-lang="uk" lang="uk">
+<header>
+  <p class="eyebrow">Life OS</p>
+  <h1>Політика конфіденційності</h1>
+  <p class="updated">Востаннє оновлено: 26 жовтня 2026 р.</p>
+</header>
+<div class="summary"><h2>Коротко</h2>
+<ul><li>Life OS зберігає те, що ви створюєте (цілі, звички, щоденник тощо), щоб це працювало і синхронізувалося між вашими пристроями.</li><li>Ми не продаємо дані, не показуємо рекламу, не стежимо за вами в інших застосунках і не використовуємо ваш контент для навчання штучного інтелекту.</li><li>Коуч працює всередині Застосунку: ваші повідомлення не надсилаються стороннім сервісам ШІ.</li><li>Акаунт можна видалити в будь-який момент: Налаштування → Видалити акаунт.</li><li>З будь-яким питанням пишіть на <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</li></ul></div>
 
+<h2>1. Хто обробляє ваші дані</h2>
+<p>Володілець персональних даних (у термінах GDPR — контролер) — Вадим Магерко (Vadym Maherko), фізична особа, Україна, розробник і оператор Застосунку «Life OS». Контакт з усіх питань персональних даних: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</p>
+<p>Ця Політика розроблена відповідно до Закону України «Про захист персональних даних», а для користувачів з Європейського економічного простору і Великої Британії — також відповідно до Загального регламенту ЄС про захист даних (GDPR). Вона є невід'ємною частиною Умов використання (<a href="https://123vssdc.github.io/life-os-legal/terms.html">https://123vssdc.github.io/life-os-legal/terms.html</a>) і повідомляє вас про володільця, склад і мету обробки, права та третіх осіб у розумінні статті 12 Закону України «Про захист персональних даних».</p>
+
+<h2>2. Які дані ми обробляємо</h2>
+<p>Дані Акаунта: адреса електронної пошти, пароль (зберігається лише у вигляді криптографічного хешу, ми не бачимо його), ім'я, якщо ви його вказали, мова і налаштування Застосунку.</p>
+<p>Відповіді онбордингу: сфери життя, на яких ви хочете зосередитися, і труднощі, які ви обрали, щоб Застосунок підлаштувався під вас.</p>
+<p>Контент користувача: цілі, етапи і прогрес, задачі та чек-листи, звички і відмітки їх виконання, серії (стріки), записи щоденника, «вивантаження думок», ідеї, навчальні матеріали, фінансові цілі і суми, плани дня, тижня і місяця, вечірні та тижневі огляди, оцінки настрою і дня, листи «собі в майбутнє», зображення і підписи дошки бачення, повідомлення Коучу і його відповіді, досвід (XP), рівні й досягнення.</p>
+<p>Звернення: якщо ви надсилаєте відгук через форму в Застосунку, ми зберігаємо текст і (лише якщо ви її вказали) адресу пошти для відповіді. Якщо ви пишете нам листом, ми отримуємо вашу адресу і зміст листа.</p>
+<p>Технічні дані: під час входу і роботи з сервером постачальник хостингу автоматично фіксує IP-адресу, час запиту і технічні відомості про клієнт (журнали безпеки та автентифікації). Під час перевірки оновлень Застосунок звертається до серверів Expo і передає технічні дані: версію Застосунку, платформу та IP-адресу, але не ваш контент.</p>
+<p>Дані на пристрої: частина налаштувань (тема, мова, час нагадувань) і тимчасовий кеш зберігаються лише на вашому пристрої. Токен входу зберігається в захищеному сховищі iOS.</p>
+
+<h2>3. Дані особливої категорії</h2>
+<p>Записи щоденника, оцінки настрою, огляди, «вивантаження думок» і розмови з Коучем можуть містити відомості про ваш емоційний стан, здоров'я чи стосунки. Такі дані належать до особливої категорії (стаття 7 Закону України «Про захист персональних даних», стаття 9 GDPR).</p>
+<p>Ми обробляємо їх лише на підставі вашої явної згоди (розділ 5) і лише для того, щоб показувати їх вам і робити розрахунки у Застосунку (наприклад, графік настрою чи «рік у пікселях»). Ми не аналізуємо їх для профілювання, не передаємо рекламодавцям і не використовуємо для навчання ШІ. Ви самі вирішуєте, що записувати: усі ці функції необов'язкові.</p>
+
+<h2>4. Чого ми не збираємо</h2>
+<ul><li>геолокацію, контакти, фото з галереї (крім зображень, які ви самі додаєте на дошку бачення), мікрофон, дані Health;</li><li>рекламні ідентифікатори (IDFA); ми не стежимо за вами в чужих застосунках і на сайтах, тому Застосунок не показує запиту App Tracking Transparency;</li><li>платіжні дані: у Застосунку немає покупок;</li><li>жодних даних через сторонні рекламні чи аналітичні SDK.</li></ul>
+<p>Застосунок має вбудований механізм статистики використання (наприклад, подія «ціль створено»), а також підтримку звітів про збої через сервіс Sentry. У поточній версії обидва вимкнені і нічого на сервер не надсилають. Якщо ми їх увімкнемо, то спершу оновимо цю Політику.</p>
+
+<h2>5. Мета і правові підстави обробки</h2>
+<ul><li>Надання Сервісу (Акаунт, збереження і синхронізація контенту, функції Застосунку) — виконання договору, стороною якого ви є: стаття 11 Закону України «Про захист персональних даних», стаття 6(1)(b) GDPR.</li><li>Обробка даних особливої категорії (розділ 3) — ваша явна згода: стаття 7 Закону, стаття 9(2)(a) GDPR.</li><li>Безпека, запобігання зловживанням, захист від несанкціонованого доступу, журнали автентифікації — законний інтерес володільця: стаття 11 Закону, стаття 6(1)(f) GDPR.</li><li>Відповіді на ваші звернення і відгуки — ваша згода або виконання договору.</li><li>Виконання вимог закону (наприклад, на законну вимогу суду) — обов'язок володільця, передбачений законом: стаття 11 Закону, стаття 6(1)(c) GDPR.</li></ul>
+<p>Ваша згода. Створюючи Акаунт і проставляючи позначку згоди, ви добровільно, поінформовано і однозначно погоджуєтеся на обробку ваших персональних даних, зокрема даних особливої категорії, для мети і в порядку, описаних у цій Політиці. Згоду можна будь-коли відкликати: видалити відповідні записи або Акаунт чи написати нам. Відкликання згоди не впливає на законність обробки, що відбувалася до нього, але без обробки даних Акаунта Сервіс не може працювати.</p>
+<p>Ми не ухвалюємо щодо вас рішень, які мають правові наслідки, виключно на основі автоматизованої обробки. Підказки Коуча, «оцінка дня» і рекомендації — це лише підказки, які ні на що не впливають поза Застосунком.</p>
+
+<h2>6. Коуч</h2>
+<p>Коуч працює на вбудованій логіці Застосунку за заздалегідь заданими правилами. Жодне ваше повідомлення не надсилається стороннім постачальникам ШІ (OpenAI, Anthropic, Google тощо). Розмови з Коучем зберігаються у вашому Акаунті, щоб ви бачили їх історію, і видаляються разом з Акаунтом. Якщо ми колись захочемо підключити сторонній ШІ-сервіс, то спершу оновимо цю Політику і попросимо вашої окремої згоди в Застосунку.</p>
+
+<h2>7. Кому ми передаємо дані</h2>
+<p>Ми передаємо дані лише постачальникам, без яких Сервіс не може працювати, і лише в потрібному обсязі:</p>
+<ul><li>Supabase Inc. (США) — розпорядник: хостинг бази даних, файлового сховища й автентифікації, надсилання листів підтвердження і скидання пароля;</li><li>Expo / 650 Industries, Inc. (США) — служба оновлень Застосунку: отримує технічні дані запиту, але не ваш контент;</li><li>Apple Inc. — розповсюдження Застосунку через App Store. Apple обробляє дані про ваші завантаження за власною політикою конфіденційності. Ми отримуємо від Apple лише знеособлену статистику та звіти про збої, якщо ви дозволили ділитися ними з розробниками в налаштуваннях iPhone;</li><li>GitHub, Inc. (США) — хостинг вебсторінок з цими документами; під час їх відкриття GitHub може фіксувати вашу IP-адресу. Ми не ставимо на цих сторінках файлів cookie.</li></ul>
+<p>Розробник, який керує Сервісом, має роль адміністратора бази даних і може отримати доступ до ваших даних лише тоді, коли це потрібно для підтримки, про яку ви просили, для розслідування зловживань чи збою або на вимогу закону.</p>
+<p>Ми розкриваємо дані державним органам лише у випадках і порядку, передбачених законом (наприклад, на підставі рішення суду). Ми не продаємо, не здаємо в оренду і не обмінюємо ваші дані.</p>
+
+<h2>8. Транскордонна передача</h2>
+<p>Сервери постачальників, наведених у розділі 7, можуть розташовуватися за межами України, зокрема в США та країнах ЄС. Передача відбувається відповідно до статті 29 Закону України «Про захист персональних даних»: до держав, які забезпечують належний захист персональних даних, або на підставі вашої згоди та для виконання договору з вами. Для користувачів з ЄЕП і Великої Британії передача до США здійснюється на підставі стандартних договірних положень (SCC), які постачальники включають у свої угоди про обробку даних.</p>
+
+<h2>9. Як ми захищаємо дані</h2>
+<ul><li>обмін даними між Застосунком і сервером зашифровано (TLS);</li><li>правила доступу на рівні рядків бази даних (Row Level Security) дозволяють кожному Акаунту бачити лише власні записи;</li><li>паролі зберігаються лише у вигляді хешу, а токен сесії — у захищеному сховищі iOS;</li><li>адміністративний доступ має лише розробник.</li></ul>
+<p>Важливо: зображення дошки бачення зберігаються у сховищі з доступом за посиланням. Їхні адреси містять випадкові ідентифікатори, ніде не публікуються і не індексуються, але будь-хто, хто отримає пряме посилання, зможе відкрити зображення. Не додавайте на дошку бачення документів чи приватних фото.</p>
+<p>Жодна система не є абсолютно захищеною. Якщо станеться інцидент, що загрожує вашим даним, ми без невиправданої затримки повідомимо вас, а також повідомимо органи, якщо цього вимагає закон.</p>
+
+<h2>10. Скільки ми зберігаємо дані</h2>
+<ul><li>Дані Акаунта і Контент користувача зберігаються, доки існує Акаунт. Окремі записи, які ви видаляєте, стираються одразу.</li><li>Після видалення Акаунта дані негайно стираються з робочої бази даних і сховища зображень. Залишкові копії в резервних копіях постачальника хостингу перезаписуються автоматично, зазвичай протягом 30 днів.</li><li>Журнали безпеки й автентифікації зберігаються обмежений строк, установлений постачальником хостингу, після чого автоматично видаляються.</li><li>Звернення і відгуки зберігаються, доки це потрібно для відповіді та покращення Сервісу, але не довше 3 років, або видаляються раніше на ваш запит.</li></ul>
+
+<h2>11. Ваші права</h2>
+<p>Відповідно до статті 8 Закону України «Про захист персональних даних» ви маєте право:</p>
+<ul><li>знати про джерела збирання, місцезнаходження своїх персональних даних, мету їх обробки, місцезнаходження володільця чи розпорядника;</li><li>отримувати інформацію про умови доступу до даних, зокрема про третіх осіб, яким вони передаються;</li><li>мати доступ до своїх персональних даних;</li><li>отримати відповідь на запит не пізніше 30 календарних днів з дня його надходження;</li><li>пред'являти вмотивовану вимогу із запереченням проти обробки;</li><li>вимагати змінити чи знищити дані, якщо вони обробляються незаконно або є недостовірними;</li><li>на захист від незаконної обробки, випадкової втрати, знищення чи пошкодження даних;</li><li>звертатися зі скаргами до Уповноваженого Верховної Ради України з прав людини або до суду;</li><li>застосовувати засоби правового захисту в разі порушення законодавства;</li><li>вносити застереження щодо обмеження права на обробку під час надання згоди;</li><li>відкликати згоду на обробку;</li><li>знати механізм автоматичної обробки даних;</li><li>на захист від автоматизованого рішення, яке має для вас правові наслідки.</li></ul>
+<p>Користувачі з ЄЕП і Великої Британії мають також права, передбачені GDPR: на доступ, виправлення, видалення («право бути забутим»), обмеження обробки, перенесення даних у машиночитному форматі, заперечення проти обробки, відкликання згоди і подання скарги до наглядового органу своєї країни. Жителі Каліфорнії мають права, передбачені CCPA/CPRA: ми не продаємо персональні дані і не передаємо їх для поведінкової реклами.</p>
+<p>Як скористатися правами:</p>
+<ul><li>виправити чи видалити окремі записи можна безпосередньо в Застосунку;</li><li>видалити Акаунт і всі дані: Налаштування → Видалити акаунт;</li><li>отримати копію даних (у форматі JSON), заперечити проти обробки чи поставити будь-яке інше питання: напишіть на <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> з адреси, на яку зареєстровано Акаунт. Так ми переконаємося, що запит надіслали саме ви. Відповідь надаємо безоплатно протягом 30 днів.</li></ul>
+
+<h2>12. Діти</h2>
+<p>Сервіс не призначений для дітей віком до 13 років, і ми свідомо не збираємо їхніх даних. Особи віком від 13 до 18 років користуються Сервісом зі згоди батьків чи законних представників (див. розділ 4 Умов). Якщо ви вважаєте, що дитина до 13 років надала нам дані, напишіть на <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>, і ми їх видалимо.</p>
+
+<h2>13. Сповіщення</h2>
+<p>Нагадування про звички, план дня і вечірній огляд — це локальні сповіщення, які планує сам iOS на вашому пристрої. Ми не отримуємо push-токенів і не надсилаємо сповіщень із сервера. Вимкнути нагадування можна в налаштуваннях Застосунку або iOS.</p>
+
+<h2>14. Зміни Політики</h2>
+<p>Актуальна редакція завжди доступна в Застосунку (Налаштування → Політика конфіденційності) і за адресою <a href="https://123vssdc.github.io/life-os-legal/privacy.html">https://123vssdc.github.io/life-os-legal/privacy.html</a>. Про суттєві зміни (новий постачальник, нові категорії даних, нова мета обробки) ми повідомимо в Застосунку щонайменше за 14 днів до набрання ними чинності, а якщо зміни потребують вашої нової згоди, попросимо її окремо.</p>
+
+<h2>15. Контакти і скарги</h2>
+<p>Володілець: Вадим Магерко (Vadym Maherko). Електронна пошта: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</p>
+<p>Якщо ви вважаєте, що ваші права порушено, спершу напишіть нам, і ми спробуємо все виправити. Ви також маєте право звернутися до Уповноваженого Верховної Ради України з прав людини (<a href="https://ombudsman.gov.ua">ombudsman.gov.ua</a>; вул. Інститутська, 21/8, м. Київ, 01008; гаряча лінія 0800 50 17 20) або до суду. Користувачі з ЄЕП і Великої Британії можуть звернутися до наглядового органу з питань захисту даних своєї країни.</p>
+
+<footer>
+  <p><a href="index.html#uk">Усі документи</a> · <a href="support.html#uk">Підтримка</a></p>
+  <p>Life OS — інструмент саморозвитку і продуктивності. Він не замінює медичної, психологічної, юридичної чи фінансової допомоги.</p>
+</footer>
+</section>
+
+<section data-lang="en" lang="en">
 <header>
   <p class="eyebrow">Life OS</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 7 September 2026</p>
+  <p class="updated">Last updated: 26 October 2026</p>
 </header>
+<div class="summary"><h2>Summary</h2>
+<ul><li>Life OS stores what you create (goals, habits, journal and so on) so it works and syncs across your devices.</li><li>We do not sell data, show ads, track you across other apps, or use your content to train AI.</li><li>The Coach runs inside the App: your messages are not sent to any third-party AI service.</li><li>You can delete your account at any time: Settings → Delete account.</li><li>For any question, email <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</li></ul></div>
 
-<div class="summary">
-  <h2>Summary</h2>
-  <p>Life OS stores the goals, habits, journal entries and other content you create, so it can sync
-  across your devices. We do not sell your data, we do not show ads, and we do not use your personal
-  content to train AI models.</p>
-</div>
+<h2>1. Who processes your data</h2>
+<p>The owner (data controller) of your personal data is Vadym Maherko, an individual based in Ukraine, who develops and runs the "Life OS" app. Contact for every personal-data question: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</p>
+<p>This Policy follows the Law of Ukraine "On Personal Data Protection" and, for users in the European Economic Area and the United Kingdom, the EU General Data Protection Regulation (GDPR). It forms an integral part of the Terms of Use (<a href="https://123vssdc.github.io/life-os-legal/terms.html">https://123vssdc.github.io/life-os-legal/terms.html</a>) and serves as the notice about the controller, the data, the purposes, your rights and third parties required by Article 12 of the Law of Ukraine "On Personal Data Protection".</p>
 
-<h2>1. Who we are</h2>
-<p>Life OS is operated by an independent developer. For any privacy question or request, contact
-<a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> — this is the fastest
-route to a human.</p>
+<h2>2. Data we process</h2>
+<p>Account data: your email address, password (stored only as a cryptographic hash; we never see it), your name if you add one, and your language and App settings.</p>
+<p>Onboarding answers: the life areas you want to focus on and the challenges you picked, so the App can adapt to you.</p>
+<p>User Content: goals, milestones and progress, tasks and checklists, habits and check-ins, streaks, journal entries, brain dumps, ideas, learning items, financial goals and amounts, day, week and month plans, evening and weekly reviews, mood and day ratings, letters to your future self, vision board images and captions, messages to the Coach and its replies, XP, levels and achievements.</p>
+<p>Messages to us: if you send feedback through the in-app form, we store the text and (only if you provide it) an email address to reply to. If you email us, we receive your address and the message.</p>
+<p>Technical data: when you sign in and use the server, our hosting provider automatically logs your IP address, the time of the request and technical details about the client (security and authentication logs). When it checks for updates, the App contacts Expo's servers and sends technical data (App version, platform and IP address), but none of your content.</p>
+<p>On-device data: some settings (theme, language, reminder times) and a temporary cache are stored only on your device. Your sign-in token is kept in the iOS secure storage.</p>
 
-<h2>2. Data you give us</h2>
-<p><strong>Account:</strong> your email address and, optionally, a display name. An account is
-required to use the app — there is no guest or anonymous mode, and everything you create is stored
-in your account rather than only on your device.</p>
-<p><strong>Content you create:</strong> goals, milestones, tasks, habits and check-ins, journal
-entries, brain dumps, ideas, learning items, vision board items and images, financial goal amounts,
-plans and reviews, and messages you send to the Coach.</p>
-<p><strong>Feedback:</strong> if you use the in-app feedback form, we store your message and — only
-if you choose to provide it — an email address to reply to.</p>
+<h2>3. Special category data</h2>
+<p>Journal entries, mood ratings, reviews, brain dumps and Coach conversations may reveal your emotional state, health or relationships. This is special category data (Article 7 of the Law of Ukraine "On Personal Data Protection", Article 9 GDPR).</p>
+<p>We process it only with your explicit consent (section 5), and only to show it back to you and to compute things in the App (for example, your mood chart or year in pixels). We do not analyse it for profiling, share it with advertisers, or use it to train AI. You decide what to write: all of these features are optional.</p>
 
-<h2>3. Data collected automatically</h2>
-<p><strong>Usage events:</strong> which screens you open and which features you use (for example
-"goal created" or "paywall viewed"), tied to your account id. We use this to understand which parts
-of the app are useful.</p>
-<p><strong>Crash reports:</strong> if the app crashes, technical diagnostics (device model, OS
-version, stack trace) are sent so we can fix it. Crash reporting is only active in builds where it
-has been configured.</p>
-<p>We do not collect your precise location, contacts, photos (beyond images you deliberately add to
-your vision board), or advertising identifiers.</p>
+<h2>4. What we do not collect</h2>
+<ul><li>location, contacts, photos from your library (other than images you choose to add to your vision board), microphone, or Health data;</li><li>advertising identifiers (IDFA). We do not track you across other companies' apps or websites, which is why the App never shows an App Tracking Transparency prompt;</li><li>payment data: there are no purchases in the App;</li><li>any data through third-party advertising or analytics SDKs.</li></ul>
+<p>The App has a built-in usage statistics mechanism (for example, a "goal created" event) and support for crash reports through Sentry. In the current version both are switched off and send nothing to any server. If we switch either of them on, we will update this Policy first.</p>
 
-<h2>4. Sensitive content</h2>
-<p>Journal entries, brain dumps and Coach conversations can contain personal reflections on your
-emotions, relationships or mental state. Treat this section as the important one.</p>
-<p>This content is stored in your account and is used only to provide the features you use. It is
-never sold, never shared with advertisers, and never used to train AI models. No human reads it
-except in the narrow cases described in section 6.</p>
+<h2>5. Purposes and legal bases</h2>
+<ul><li>Providing the Service (your Account, storing and syncing content, App features): performance of a contract you are party to (Article 11 of the Law of Ukraine "On Personal Data Protection"; Article 6(1)(b) GDPR).</li><li>Processing special category data (section 3): your explicit consent (Article 7 of the Law; Article 9(2)(a) GDPR).</li><li>Security, preventing abuse and unauthorised access, authentication logs: the controller's legitimate interest (Article 11 of the Law; Article 6(1)(f) GDPR).</li><li>Replying to your messages and feedback: your consent or performance of the contract.</li><li>Complying with the law (for example, a lawful court order): a legal obligation (Article 11 of the Law; Article 6(1)(c) GDPR).</li></ul>
+<p>Your consent. By creating an Account and ticking the consent box, you freely, knowingly and unambiguously agree to the processing of your personal data, including special category data, for the purposes and in the way described in this Policy. You can withdraw consent at any time by deleting the relevant entries or your Account, or by emailing us. Withdrawal does not affect processing that took place before it, but the Service cannot work without processing your Account data.</p>
+<p>We do not make decisions that have legal effects on you based solely on automated processing. Coach suggestions, the day score and recommendations are only prompts and have no effect outside the App.</p>
 
-<h2>5. The Coach</h2>
-<p>The Coach runs on Life OS's own built-in, rule-based logic inside the app. No message you send to
-it is sent to any third-party AI service, and your messages are never used to train AI models. If we
-ever add a third-party AI provider, we will update this policy first and tell you in the app before
-that change takes effect.</p>
-<p>The Coach is a productivity tool. It is not a therapist, doctor, lawyer or financial adviser,
-and the app contains safety rules that redirect crisis, medical and high-risk financial topics to
-real human help.</p>
+<h2>6. The Coach</h2>
+<p>The Coach runs on the App's built-in logic using predefined rules. None of your messages are sent to third-party AI providers (OpenAI, Anthropic, Google or others). Coach conversations are stored in your Account so you can see their history, and they are deleted together with your Account. If we ever want to connect a third-party AI service, we will update this Policy first and ask for your separate consent in the App.</p>
 
-<h2>6. Who we share data with</h2>
-<p><strong>Supabase</strong> — hosts the database, file storage and authentication.<br>
-<strong>Sentry</strong> — receives crash diagnostics when crash reporting is enabled.<br>
-<strong>Expo</strong> — used to build and distribute the app.</p>
-<p>Each of these only receives what it needs to do its job. Beyond them, we disclose data only if we
-are legally required to, or where it is genuinely necessary to protect someone from serious harm.</p>
-<p>The developer who operates Life OS holds an administrator role in the database and can access your
-data when that is needed to provide support you have asked for or to investigate abuse of the
-service.</p>
+<h2>7. Who we share data with</h2>
+<p>We share data only with providers the Service cannot run without, and only as much as they need:</p>
+<ul><li>Supabase Inc. (USA): processor that hosts the database, file storage and authentication, and sends confirmation and password-reset emails;</li><li>Expo / 650 Industries, Inc. (USA): App update service; receives technical request data but none of your content;</li><li>Apple Inc.: distributes the App through the App Store. Apple processes data about your downloads under its own privacy policy. We only receive aggregated statistics and crash reports from Apple if you have chosen to share them with developers in your iPhone settings;</li><li>GitHub, Inc. (USA): hosts the web pages with these documents; GitHub may log your IP address when you open them. We do not set cookies on these pages.</li></ul>
+<p>The developer who runs the Service holds a database administrator role and accesses your data only when needed for support you asked for, to investigate abuse or a failure, or when the law requires it.</p>
+<p>We disclose data to public authorities only in the cases and the manner set by law (for example, under a court order). We do not sell, rent or trade your data.</p>
 
-<h2>7. Where data is stored</h2>
-<p>Data is stored on Supabase infrastructure, which may be located outside your country, including
-in the United States and the European Union. Access is restricted by per-user database rules so that
-your rows are readable only by your own account, apart from the operator access described in
-section 6.</p>
+<h2>8. International transfers</h2>
+<p>The servers of the providers in section 7 may be located outside Ukraine, including in the USA and EU countries. Transfers follow Article 29 of the Law of Ukraine "On Personal Data Protection": to states that ensure adequate protection of personal data, or based on your consent and to perform the contract with you. For users in the EEA and the UK, transfers to the USA rely on the Standard Contractual Clauses (SCCs) included in the providers' data processing agreements.</p>
 
-<h2>8. How long we keep it</h2>
-<p>Your content is kept while your account exists. Deleted items may remain in encrypted backups for
-a limited period before those backups roll over. Usage events and crash reports are retained in
-aggregate for product analysis.</p>
+<h2>9. How we protect data</h2>
+<ul><li>data between the App and the server is encrypted in transit (TLS);</li><li>row-level security rules in the database let each Account see only its own records;</li><li>passwords are stored only as hashes, and the session token is kept in the iOS secure storage;</li><li>only the developer has administrator access.</li></ul>
+<p>Important: vision board images are kept in storage that can be opened by link. Their addresses contain random identifiers and are never published or indexed, but anyone who gets a direct link can open the image. Do not add identity documents or private photos to your vision board.</p>
+<p>No system is perfectly secure. If an incident puts your data at risk, we will tell you without undue delay and notify the authorities where the law requires.</p>
 
-<h2>9. Your rights</h2>
-<p>You can delete your account and everything in it directly in the app: Settings → Delete account.
-Deletion is immediate and cannot be undone.</p>
-<p>You can also request a copy of your data, correction of it, or deletion by emailing
-<a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> — we aim to respond
-within 30 days. In-app self-service export is not available yet; the email route covers it.</p>
-<p>Depending on where you live (for example the EU/UK under GDPR, or California under CCPA), you may
-also have the right to object to processing or to lodge a complaint with your local data protection
-authority.</p>
+<h2>10. How long we keep data</h2>
+<ul><li>Account data and User Content are kept while your Account exists. Individual entries you delete are erased right away.</li><li>When you delete your Account, the data is erased immediately from the live database and image storage. Leftover copies in the hosting provider's backups are overwritten automatically, usually within 30 days.</li><li>Security and authentication logs are kept for the limited period set by the hosting provider and then deleted automatically.</li><li>Feedback and messages are kept as long as needed to reply and improve the Service, for no more than 3 years, or deleted sooner at your request.</li></ul>
 
-<h2>10. Children</h2>
-<p>Life OS is not directed at children under 13, and we do not knowingly collect data from them. If
-you believe a child has given us data, email
-<a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> and we will delete it.</p>
+<h2>11. Your rights</h2>
+<p>Under Article 8 of the Law of Ukraine "On Personal Data Protection", you have the right to:</p>
+<ul><li>know the sources of collection and the location of your personal data, the purpose of processing, and the location of the controller or processor;</li><li>receive information about the conditions of access to your data, including the third parties it is shared with;</li><li>access your personal data;</li><li>get a reply to your request within 30 calendar days of receipt;</li><li>make a reasoned objection to processing;</li><li>require changes to or destruction of your data if it is processed unlawfully or is inaccurate;</li><li>protection from unlawful processing, accidental loss, destruction or damage;</li><li>complain to the Ukrainian Parliament Commissioner for Human Rights or to a court;</li><li>use legal remedies if the law is broken;</li><li>set restrictions on processing when giving consent;</li><li>withdraw consent to processing;</li><li>know how automated processing works;</li><li>protection from automated decisions with legal effects on you.</li></ul>
+<p>Users in the EEA and UK also have the GDPR rights of access, rectification, erasure ("right to be forgotten"), restriction, portability in a machine-readable format, objection, withdrawal of consent, and complaint to their local supervisory authority. California residents have rights under the CCPA/CPRA; we do not sell personal information or share it for cross-context behavioural advertising.</p>
+<p>How to use your rights:</p>
+<ul><li>correct or delete individual entries directly in the App;</li><li>delete your Account and all data: Settings → Delete account;</li><li>get a copy of your data (as JSON), object to processing, or ask anything else: email <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> from the address your Account is registered to, so we can confirm the request is yours. We reply free of charge within 30 days.</li></ul>
 
-<h2>11. Changes to this policy</h2>
-<p>If this policy changes in a way that meaningfully affects you, we will surface the change in the
-app rather than quietly editing this page. Continued use after that means you accept the updated
-policy.</p>
+<h2>12. Children</h2>
+<p>The Service is not intended for children under 13, and we do not knowingly collect their data. People aged 13 to 18 use the Service with a parent's or legal guardian's consent (see section 4 of the Terms). If you believe a child under 13 has given us data, email <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> and we will delete it.</p>
+
+<h2>13. Notifications</h2>
+<p>Habit, day-plan and evening-review reminders are local notifications scheduled by iOS on your device. We do not receive push tokens and do not send notifications from a server. You can turn reminders off in the App settings or in iOS.</p>
+
+<h2>14. Changes to this Policy</h2>
+<p>The current version is always available in the App (Settings → Privacy Policy) and at <a href="https://123vssdc.github.io/life-os-legal/privacy.html">https://123vssdc.github.io/life-os-legal/privacy.html</a>. We will tell you in the App about material changes (a new provider, new categories of data, a new purpose) at least 14 days before they take effect, and if a change needs your fresh consent, we will ask for it separately.</p>
+
+<h2>15. Contact and complaints</h2>
+<p>Controller: Vadym Maherko. Email: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</p>
+<p>If you believe your rights have been breached, please email us first and we will try to put it right. You also have the right to complain to the Ukrainian Parliament Commissioner for Human Rights (<a href="https://ombudsman.gov.ua">ombudsman.gov.ua</a>; 21/8 Instytutska St., Kyiv, 01008, Ukraine; hotline 0800 50 17 20) or to go to court. Users in the EEA and UK can complain to the data protection authority in their country.</p>
 
 <footer>
-  <nav><a href="./">Home</a><a href="terms.html">Terms of Service</a></nav>
+  <p><a href="index.html#en">All documents</a> · <a href="support.html#en">Support</a></p>
+  <p>Life OS is a self-development and productivity tool. It does not replace medical, psychological, legal or financial advice.</p>
 </footer>
-
+</section>
 </div>
+<script>
+(function(){
+  function show(l){
+    document.querySelectorAll('section[data-lang]').forEach(function(s){s.hidden=s.dataset.lang!==l});
+    document.querySelectorAll('.lang a').forEach(function(a){a.classList.toggle('on',a.dataset.lang===l)});
+    document.documentElement.lang=l;
+  }
+  var h=location.hash.slice(1);
+  var nav=(navigator.language||'').toLowerCase();
+  show(h==='uk'||h==='en'?h:(/^(uk|ru)/.test(nav)?'uk':'en'));
+  window.addEventListener('hashchange',function(){var x=location.hash.slice(1);if(x==='uk'||x==='en')show(x)});
+})();
+</script>
 </body>
 </html>

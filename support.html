@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support / Підтримка — Life OS</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.lang{display:flex;gap:8px;margin:0 0 8px}
+.lang a{padding:6px 14px;border:1px solid var(--border);border-radius:999px;text-decoration:none;font-size:15px}
+.lang a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+ul{color:var(--text-secondary);font-size:17px;margin:0 0 14px;padding-left:22px}
+li{margin:0 0 6px}
+section[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="lang"><a href="#uk" data-lang="uk">Українська</a><a href="#en" data-lang="en">English</a></nav>
+<section data-lang="uk" lang="uk">
+<header>
+  <p class="eyebrow">Life OS</p>
+  <h1>Підтримка</h1>
+</header>
+<h2>Зв’язатися з нами</h2>
+<p>Питання, помилки, пропозиції, запити щодо персональних даних: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>. Зазвичай відповідаємо протягом кількох днів; на запити щодо персональних даних — не пізніше 30 календарних днів.</p>
+
+<h2>Як видалити акаунт</h2>
+<p>У застосунку: Налаштування → Видалити акаунт. Видалення відбувається одразу і є незворотним: акаунт, усі ваші записи і зображення стираються. Якщо доступу до застосунку немає, напишіть на <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> з адреси, на яку зареєстровано акаунт, і ми видалимо його вручну.</p>
+
+<h2>Як отримати копію даних</h2>
+<p>Напишіть на <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> з адреси акаунта. Ми безоплатно надішлемо ваші дані у форматі JSON протягом 30 днів.</p>
+
+<h2>Забули пароль</h2>
+<p>На екрані входу натисніть «Забули пароль?» і перейдіть за посиланням з листа.</p>
+
+<h2>Кризова ситуація</h2>
+<p>Застосунок не надає екстреної допомоги. Якщо вам чи комусь загрожує небезпека, телефонуйте 112. Лінія психологічної підтримки Lifeline Ukraine — 7333 (цілодобово).</p>
+<footer>
+  <p><a href="index.html#uk">Усі документи</a></p>
+  <p>Life OS — інструмент саморозвитку і продуктивності. Він не замінює медичної, психологічної, юридичної чи фінансової допомоги.</p>
+</footer>
+</section>
+
+<section data-lang="en" lang="en">
+<header>
+  <p class="eyebrow">Life OS</p>
+  <h1>Support</h1>
+</header>
+<h2>Contact us</h2>
+<p>Questions, bugs, ideas, personal-data requests: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>. We usually reply within a few days, and to personal-data requests within 30 calendar days at the latest.</p>
+
+<h2>Delete your account</h2>
+<p>In the app: Settings → Delete account. Deletion is immediate and cannot be undone: your account, all your entries and images are erased. If you cannot open the app, email <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> from the address your account is registered to and we will delete it for you.</p>
+
+<h2>Get a copy of your data</h2>
+<p>Email <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a> from your account address. We will send your data as JSON, free of charge, within 30 days.</p>
+
+<h2>Forgot your password</h2>
+<p>On the sign-in screen tap "Forgot password?" and follow the link in the email.</p>
+
+<h2>In a crisis</h2>
+<p>The app does not provide emergency help. If you or someone else is in danger, call your local emergency number (112 in Ukraine and the EU, 911 in the US). In Ukraine, Lifeline Ukraine is available 24/7 on 7333.</p>
+<footer>
+  <p><a href="index.html#en">All documents</a></p>
+  <p>Life OS is a self-development and productivity tool. It does not replace medical, psychological, legal or financial advice.</p>
+</footer>
+</section>
+</div>
+<script>
+(function(){
+  function show(l){
+    document.querySelectorAll('section[data-lang]').forEach(function(s){s.hidden=s.dataset.lang!==l});
+    document.querySelectorAll('.lang a').forEach(function(a){a.classList.toggle('on',a.dataset.lang===l)});
+    document.documentElement.lang=l;
+  }
+  var h=location.hash.slice(1);
+  var nav=(navigator.language||'').toLowerCase();
+  show(h==='uk'||h==='en'?h:(/^(uk|ru)/.test(nav)?'uk':'en'));
+  window.addEventListener('hashchange',function(){var x=location.hash.slice(1);if(x==='uk'||x==='en')show(x)});
+})();
+</script>
+</body>
+</html>
